@@ -125,13 +125,16 @@
 </head>
 
 <body class="bg-gray-50 font-sans text-gray-800">
-@include('partials.navbar') <!-- Include Navbar -->
-
+@unless (Route::is('login') || Route::is('register'))
+    @include('partials.navbar') <!-- Include Navbar -->
+@endunless
 <div class="container mt-16">
     @yield('content') <!-- Dynamic Content -->
 </div>
 
-@include('partials.footer') <!-- Include Footer -->
+@unless (Route::is('login') || Route::is('register'))
+    @include('partials.footer') <!-- Include Footer -->
+@endunless
 <script>
     < script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" >
 </script>
