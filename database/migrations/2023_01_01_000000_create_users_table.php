@@ -1,4 +1,3 @@
-
 <?php
 
 use Illuminate\Database\Migrations\Migration;
@@ -22,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('profile_picture')->nullable();
             $table->text('bio')->nullable();
-            $table->boolean('is_admin')->default(false)->after('remember_token');
+            $table->boolean('is_admin')->default(false);
             $table->string('twitter')->nullable();
             $table->string('facebook')->nullable();
             $table->string('linkedin')->nullable();
@@ -31,6 +30,7 @@ class CreateUsersTable extends Migration
             $table->timestamps();
         });
     }
+
 
     /**
      * Reverse the migrations.

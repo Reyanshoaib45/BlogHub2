@@ -13,7 +13,7 @@
     @endif
 
     <meta name="description" content="A modern blogging platform for creative minds" />
-    <meta name="author" content="BlogHub" />
+    <meta name="Reyan Shoaib" content="BlogHub" />
     <meta property="og:image" content="/og-image.png" />
     <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
