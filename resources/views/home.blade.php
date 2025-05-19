@@ -40,7 +40,7 @@
                             Start Writing
                             <i class="fas fa-arrow-right ml-2"></i>
                         </a>
-                        <a href="{{ route('blog-page') }}"
+                        <a href="{{ route('blog.index') }}"
                            class="w-full sm:w-auto px-6 py-3 border border-gray-300 text-gray-700 rounded-full font-medium hover:bg-gray-50 transition-colors flex items-center justify-center">
                             Explore Blogs
                         </a>

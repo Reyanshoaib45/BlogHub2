@@ -97,8 +97,7 @@ Route::middleware('auth')->group(function () {
     Route::post('/blog/{post}/comment', [BlogController::class, 'storeComment'])->name('blog.comment');
 
     // Like/dislike routes
-    Route::post('/blog/{post}/like', [BlogController::class, 'like'])->name('blog.like');
-    Route::post('/blog/{post}/dislike', [BlogController::class, 'dislike'])->name('blog.dislike');
+    Route::post('/blog/like/{id}', [BlogController::class, 'like'])->name('blog.like');
 });
 
 // Admin Routes
@@ -120,7 +119,16 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
 
-    //status route
+//status route
 Route::get('/statuses', [StatusController::class, 'adminIndex'])->name('admin.statuses.index');
 Route::get('/statuses/{id}/edit', [StatusController::class, 'edit'])->name('admin.statuses.edit');
 Route::put('/statuses/{id}', [StatusController::class, 'update'])->name('admin.statuses.update');
+Route::get('/test-css', function () {
+    $path = base_path('vendor/laravel/framework/src/Illuminate/Foundation/resources/exceptions/renderer/dist/styles.css');
+
+    if (!file_exists($path)) {
+        return "File not found!";
+    }
+
+    return file_get_contents($path);
+});
