@@ -30,7 +30,7 @@
                 <div class="hidden md:flex items-center space-x-4">
                     @guest
                         <a href="{{ route('login') }}"
-                           class="ml-2 bg-black hover:bg-gray-800 text-white px-4 py-2 rounded-md transition-colors">
+                           class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
                             Sign in
                         </a>
                         <a href="{{ route('register') }}"
@@ -39,12 +39,12 @@
                         </a>
                     @else
                         <a href="{{ route('dashboard') }}"
-                           class="ml-2 bg-black hover:bg-gray-800 text-white px-4 py-2 rounded-md transition-colors">
+                           class="ml-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
                             Dashboard
                         </a>
                         @if (Auth::user()->is_admin)
                             <a href="{{ route('admin.dashboard') }}"
-                               class="ml-2 bg-black hover:bg-gray-800 text-white px-4 py-2 rounded-md transition-colors">
+                               class="ml-2  bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
                                 Admin
                             </a>
                         @endif

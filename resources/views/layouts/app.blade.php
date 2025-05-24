@@ -130,7 +130,7 @@
 @unless (Route::is('login') || Route::is('register'))
     @include('partials.navbar') <!-- Include Navbar -->
 @endunless
-<div class="container mt-16">
+<div class="w-100 mt-14">
     @yield('content') <!-- Dynamic Content -->
 </div>
 

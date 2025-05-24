@@ -42,7 +42,7 @@
                 </div>
 
                 <div class="space-y-4">
-                    <p class="text-gray-700">Follow these steps to set up your StreamLine account:</p>
+                    <p class="text-gray-700">Follow these steps to set up your BlogHubaccount:</p>
                     <ol class="list-decimal pl-5 space-y-3 text-gray-700">
                         <li>Sign up for an account on the Blog Hub website.</li>
                         <li>Verify your email address.</li>
@@ -62,7 +62,7 @@
                     <div>
                         <h3 class="text-xl font-semibold mb-3">Navigation</h3>
                         <p class="text-gray-700">
-                            Learn how to navigate the StreamLine interface efficiently. The main navigation menu is located on the left side of the screen and provides access to all key features.
+                            Learn how to navigate the BlogHubinterface efficiently. The main navigation menu is located on the left side of the screen and provides access to all key features.
                         </p>
                     </div>
 
@@ -99,7 +99,7 @@
             <section id="api-docs" class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
                 <h2 class="text-2xl font-bold mb-6">API Documentation</h2>
                 <p class="text-gray-700 mb-4">
-                    StreamLine offers a comprehensive API for developers who want to build custom integrations or extend platform functionality.
+                    BlogHuboffers a comprehensive API for developers who want to build custom integrations or extend platform functionality.
                 </p>
 
                 <div class="bg-gray-50 p-4 rounded-md mb-6 font-mono text-sm">
