@@ -22,7 +22,7 @@
                     <!-- Headline -->
                     <h1
                         class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-dark mb-6 animate-fade-in delay-200">
-                        Share Your <span class="text-primary">Stoyyyyry</span> With<br class="hidden sm:block">
+                        Share Your <span class="text-primary">Story</span> With<br class="hidden sm:block">
                         The World
                     </h1>
 
