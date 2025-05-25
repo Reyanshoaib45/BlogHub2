@@ -22,7 +22,7 @@
                     <!-- Headline -->
                     <h1
                         class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-dark mb-6 animate-fade-in delay-200">
-                        Share Your <span class="text-primary">Story</span> With<br class="hidden sm:block">
+                        Share Your <span class="text-primary">Stoyyyyry</span> With<br class="hidden sm:block">
                         The World
                     </h1>
 
@@ -35,13 +35,13 @@
                     <!-- CTA Buttons -->
                     <div
                         class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 md:mb-16 animate-fade-in delay-600">
-                        <a href="{{route('blog.index')}}"
-                           class="w-full sm:w-auto px-6 py-3 bg-primary text-white rounded-full font-medium hover:bg-secondary transition-colors flex items-center justify-center btn-hover-effect">
+                        <a href="{{ route('blog.index') }}"
+                            class="w-full sm:w-auto px-6 py-3 bg-primary text-white rounded-full font-medium hover:bg-secondary transition-colors flex items-center justify-center btn-hover-effect">
                             Start Writing
                             <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                         <a href="{{ route('blog.index') }}"
-                           class="w-full sm:w-auto px-6 py-3 border border-gray-300 text-gray-700 rounded-full font-medium hover:bg-gray-50 transition-colors flex items-center justify-center">
+                            class="w-full sm:w-auto px-6 py-3 border border-gray-300 text-gray-700 rounded-full font-medium hover:bg-gray-50 transition-colors flex items-center justify-center">
                             Explore Blogs
                         </a>
                     </div>
@@ -50,7 +50,7 @@
                     <div
                         class="relative mx-auto max-w-4xl rounded-xl overflow-hidden shadow-soft border border-gray-200 animate-scale-in">
                         <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                             alt="Person writing on a laptop with coffee" class="w-full h-auto" loading="lazy" />
+                            alt="Person writing on a laptop with coffee" class="w-full h-auto" loading="lazy" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                     </div>
 
@@ -87,30 +87,35 @@
                 </div>
 
                 <!-- Featured Post - Large -->
-                @if($mainFeaturedPost)
+                @if ($mainFeaturedPost)
                     <div class="mb-16 animate-fade-in">
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                             <div class="rounded-xl overflow-hidden h-full">
                                 <img src="{{ url('storage/' . $mainFeaturedPost->featured_image) }}"
-                                     alt="{{ $mainFeaturedPost->title }}"
-                                     class="w-full h-full object-cover max-h-[400px]"
-                                     loading="lazy">
+                                    alt="{{ $mainFeaturedPost->title }}" class="w-full h-full object-cover max-h-[400px]"
+                                    loading="lazy">
                             </div>
                             <div class="flex flex-col justify-center">
-                                <span class="text-primary text-sm font-semibold mb-2">{{ strtoupper($mainFeaturedPost->category) }}</span>
+                                <span
+                                    class="text-primary text-sm font-semibold mb-2">{{ strtoupper($mainFeaturedPost->category) }}</span>
                                 <h3 class="text-2xl md:text-3xl font-bold mb-4">{{ $mainFeaturedPost->title }}</h3>
-                                <p class="text-gray-600 mb-6">{{ $mainFeaturedPost->main_content ?: \Illuminate\Support\Str::limit($mainFeaturedPost->content, 200) }}</p>
+                                <p class="text-gray-600 mb-6">
+                                    {{ $mainFeaturedPost->main_content ?: \Illuminate\Support\Str::limit($mainFeaturedPost->content, 200) }}
+                                </p>
                                 <div class="flex items-center mb-6">
-                                    <img loading="lazy" src="{{ asset('storage/' . $mainFeaturedPost->author->profile_picture) }}"
-                                         alt="{{ $mainFeaturedPost->author->name }}"
-                                         class="w-10 h-10 rounded-full object-cover mr-4" />
+                                    <img loading="lazy"
+                                        src="{{ asset('storage/' . $mainFeaturedPost->author->profile_picture) }}"
+                                        alt="{{ $mainFeaturedPost->author->name }}"
+                                        class="w-10 h-10 rounded-full object-cover mr-4" />
                                     <div>
                                         <p class="font-medium">{{ $mainFeaturedPost->author->name }}</p>
-                                        <p class="text-gray-500 text-sm">{{ $mainFeaturedPost->published_at->format('M d, Y') }} · {{ $mainFeaturedPost->reading_time ?? '8' }} min read</p>
+                                        <p class="text-gray-500 text-sm">
+                                            {{ $mainFeaturedPost->published_at->format('M d, Y') }} ·
+                                            {{ $mainFeaturedPost->reading_time ?? '8' }} min read</p>
                                     </div>
                                 </div>
                                 <a href="{{ route('blog.show', $mainFeaturedPost->id) }}"
-                                   class="px-6 py-3 bg-primary/10 text-primary rounded-full font-medium hover:bg-primary/20 transition-colors self-start flex items-center">
+                                    class="px-6 py-3 bg-primary/10 text-primary rounded-full font-medium hover:bg-primary/20 transition-colors self-start flex items-center">
                                     Read Article
                                     <i class="fas fa-arrow-right ml-2"></i>
                                 </a>
@@ -121,14 +126,13 @@
 
                 <!-- Featured Posts Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    @foreach($gridFeaturedPosts as $post)
+                    @foreach ($gridFeaturedPosts as $post)
                         <article class="bg-white rounded-xl shadow-soft overflow-hidden blog-card animate-fade-in">
                             <div class="relative aspect-[16/9] overflow-hidden">
-                             <img src="{{ url('storage/' . $post->featured_image) }}"
-                                     alt="{{ $post->title }}"
-                                     class="w-full h-full object-cover"
-                                     loading="lazy">
-                                <div class="absolute top-4 left-4 bg-white/90 text-primary text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm">
+                                <img src="{{ url('storage/' . $post->featured_image) }}" alt="{{ $post->title }}"
+                                    class="w-full h-full object-cover" loading="lazy">
+                                <div
+                                    class="absolute top-4 left-4 bg-white/90 text-primary text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm">
                                     {{ strtoupper($post->category) }}
                                 </div>
                             </div>
@@ -144,8 +148,8 @@
                                 <div class="flex items-center text-sm text-gray-500">
                                     <div class="flex items-center">
                                         <img loading="lazy" src="{{ asset('storage/' . $post->author->profile_picture) }}"
-                                        alt="{{ $post->author->name }}"
-                                             class="w-8 h-8 rounded-full object-cover mr-2" />
+                                            alt="{{ $post->author->name }}"
+                                            class="w-8 h-8 rounded-full object-cover mr-2" />
                                         <span>{{ $post->author->name }}</span>
                                     </div>
                                     <span class="mx-2">•</span>
@@ -158,7 +162,7 @@
 
                 <div class="text-center mt-12">
                     <a href="{{ route('blog.index') }}"
-                       class="px-6 py-3 border border-gray-300 text-gray-700 rounded-full font-medium hover:bg-gray-50 transition-colors inline-flex items-center animate-fade-in">
+                        class="px-6 py-3 border border-gray-300 text-gray-700 rounded-full font-medium hover:bg-gray-50 transition-colors inline-flex items-center animate-fade-in">
                         View All Featured Stories
                         <i class="fas fa-arrow-right ml-2"></i>
                     </a>
@@ -188,8 +192,8 @@
                         <h3 class="text-lg font-bold mb-2">Technology</h3>
                         <p class="text-gray-600 text-sm mb-4">Latest in tech trends, software development, and digital
                             innovation.</p>
-                        <a href="{{route('blog.index')}}"
-                           class="text-primary font-medium text-sm flex items-center hover:text-secondary transition-colors">
+                        <a href="{{ route('blog.index') }}"
+                            class="text-primary font-medium text-sm flex items-center hover:text-secondary transition-colors">
                             View Articles
                             <i class="fas fa-chevron-right ml-1 text-xs"></i>
                         </a>
@@ -204,8 +208,8 @@
                         <h3 class="text-lg font-bold mb-2">Writing</h3>
                         <p class="text-gray-600 text-sm mb-4">Tips, techniques, and inspiration for writers of all
                             levels.</p>
-                        <a href="{{route('blog.index')}}"
-                           class="text-primary font-medium text-sm flex items-center hover:text-secondary transition-colors">
+                        <a href="{{ route('blog.index') }}"
+                            class="text-primary font-medium text-sm flex items-center hover:text-secondary transition-colors">
                             View Articles
                             <i class="fas fa-chevron-right ml-1 text-xs"></i>
                         </a>
@@ -220,8 +224,8 @@
                         <h3 class="text-lg font-bold mb-2">Marketing</h3>
                         <p class="text-gray-600 text-sm mb-4">Strategies, case studies, and insights for modern
                             marketers.</p>
-                        <a href="{{route('blog.index')}}"
-                           class="text-primary font-medium text-sm flex items-center hover:text-secondary transition-colors">
+                        <a href="{{ route('blog.index') }}"
+                            class="text-primary font-medium text-sm flex items-center hover:text-secondary transition-colors">
                             View Articles
                             <i class="fas fa-chevron-right ml-1 text-xs"></i>
                         </a>
@@ -236,8 +240,8 @@
                         <h3 class="text-lg font-bold mb-2">Design</h3>
                         <p class="text-gray-600 text-sm mb-4">UX/UI, graphic design, and visual storytelling
                             principles.</p>
-                        <a href="{{route('blog.index')}}"
-                           class="text-primary font-medium text-sm flex items-center hover:text-secondary transition-colors">
+                        <a href="{{ route('blog.index') }}"
+                            class="text-primary font-medium text-sm flex items-center hover:text-secondary transition-colors">
                             View Articles
                             <i class="fas fa-chevron-right ml-1 text-xs"></i>
                         </a>
@@ -252,8 +256,8 @@
                         <h3 class="text-lg font-bold mb-2">Psychology</h3>
                         <p class="text-gray-600 text-sm mb-4">Understanding human behavior, motivation, and cognitive
                             processes.</p>
-                        <a href="{{route('blog.index')}}"
-                           class="text-primary font-medium text-sm flex items-center hover:text-secondary transition-colors">
+                        <a href="{{ route('blog.index') }}"
+                            class="text-primary font-medium text-sm flex items-center hover:text-secondary transition-colors">
                             View Articles
                             <i class="fas fa-chevron-right ml-1 text-xs"></i>
                         </a>
@@ -268,8 +272,8 @@
                         <h3 class="text-lg font-bold mb-2">Business</h3>
                         <p class="text-gray-600 text-sm mb-4">Entrepreneurship, leadership, and business strategy
                             insights.</p>
-                        <a href="{{route('blog.index')}}"
-                           class="text-primary font-medium text-sm flex items-center hover:text-secondary transition-colors">
+                        <a href="{{ route('blog.index') }}"
+                            class="text-primary font-medium text-sm flex items-center hover:text-secondary transition-colors">
                             View Articles
                             <i class="fas fa-chevron-right ml-1 text-xs"></i>
                         </a>
@@ -284,8 +288,8 @@
                         <h3 class="text-lg font-bold mb-2">Photography</h3>
                         <p class="text-gray-600 text-sm mb-4">Techniques, equipment reviews, and visual storytelling.
                         </p>
-                        <a href="{{route('blog.index')}}"
-                           class="text-primary font-medium text-sm flex items-center hover:text-secondary transition-colors">
+                        <a href="{{ route('blog.index') }}"
+                            class="text-primary font-medium text-sm flex items-center hover:text-secondary transition-colors">
                             View Articles
                             <i class="fas fa-chevron-right ml-1 text-xs"></i>
                         </a>
@@ -299,8 +303,8 @@
                         </div>
                         <h3 class="text-lg font-bold mb-2">Lifestyle</h3>
                         <p class="text-gray-600 text-sm mb-4">Wellness, personal development, and balanced living.</p>
-                        <a href="{{route('blog.index')}}"
-                           class="text-primary font-medium text-sm flex items-center hover:text-secondary transition-colors">
+                        <a href="{{ route('blog.index') }}"
+                            class="text-primary font-medium text-sm flex items-center hover:text-secondary transition-colors">
                             View Articles
                             <i class="fas fa-chevron-right ml-1 text-xs"></i>
                         </a>
