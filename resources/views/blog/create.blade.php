@@ -60,6 +60,8 @@
                             <option value="">Select a category</option>
                             <option value="Technology" {{ old('category') == 'Technology' ? 'selected' : '' }}>Technology
                             </option>
+                            <option value="Insurance" {{ old('category') == 'Insurance' ? 'selected' : '' }}>Insurance
+                            </option>
                             <option value="Lifestyle" {{ old('category') == 'Lifestyle' ? 'selected' : '' }}>Life style
                             </option>
                             <option value="health" {{ old('category') == 'health' ? 'selected' : '' }}>Health
@@ -67,7 +69,8 @@
                             <option value="Productivity" {{ old('category') == 'Productivity' ? 'selected' : '' }}>
                                 Productivity</option>
                             <option value="Design" {{ old('category') == 'Design' ? 'selected' : '' }}>Design</option>
-                            <option value="Business" {{ old('category') == 'Business' ? 'selected' : '' }}>Business</option>
+                            <option value="Business" {{ old('category') == 'Business' ? 'selected' : '' }}>Business
+                            </option>
                             <option value="Marketing" {{ old('category') == 'Marketing' ? 'selected' : '' }}>Marketing
                             </option>
                             <option value="Remote Work" {{ old('category') == 'Remote Work' ? 'selected' : '' }}>Remote
