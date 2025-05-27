@@ -61,7 +61,11 @@
     </div>
 
     <a href="https://obstinacysexist.com/ztvrvi7yh2?key=dd87d9235cc3028350eecce2ada7546f" target="_blank"
-        rel="noopener noreferrer">Click here</a>
+        rel="noopener noreferrer"
+        class="ml-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded justify-center "
+        style="display: flex">
+        Explore Blog
+    </a>
     {{-- Direct Link for  bloghub.live --}}
     @unless (Route::is('login') || Route::is('register'))
         @include('partials.footer') <!-- Include Footer -->
