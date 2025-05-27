@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@yield('title', 'BlogHub - Modern Blogging Platform')</title>
-    @if(isset($seo))
+    @if (isset($seo))
         @include('partials.seo-meta', $seo)
     @else
         <title>{{ config('seo.default_title') }}</title>
@@ -30,33 +30,56 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Custom Styles -->
-    <script src="{{ asset('js/tailwind.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
-
     <!-- Load Tailwind Configuration -->
+    <script src="{{ asset('js/tailwind.js') }}"></script>
+    {{-- Popunder for  bloghub.live --}}
+    <script type='text/javascript' src='//obstinacysexist.com/c8/aa/4d/c8aa4de7e8742925fc57e1dfafd71899.js'></script>
 
 </head>
 
 <body class="bg-gray-50 font-sans text-gray-800">
-@unless (Route::is('login') || Route::is('register'))
-    @include('partials.navbar') <!-- Include Navbar -->
-@endunless
-<div class="w-100 mt-14">
-    @yield('content') <!-- Dynamic Content -->
-</div>
+    @unless (Route::is('login') || Route::is('register'))
+        @include('partials.navbar') <!-- Include Navbar -->
+    @endunless
+    {{-- Native Banner for  bloghub.live --}}
+    <div id="container-79b0d25bdb943d972ff9d5ecb9d7cecb"></div>
 
-@unless (Route::is('login') || Route::is('register'))
-    @include('partials.footer') <!-- Include Footer -->
-@endunless
-<script>
-    <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" >
-</script>
-<script src="{{ asset('js/custom.js') }}"></script>
+    {{-- Banner 468x60 for  bloghub.live --}}
+    <script type="text/javascript">
+        atOptions = {
+            'key': 'd9c1297e29c1ffb2d90e21810fb12de6',
+            'format': 'iframe',
+            'height': 60,
+            'width': 468,
+            'params': {}
+        };
+    </script>
+    <script type="text/javascript" src="//obstinacysexist.com/d9c1297e29c1ffb2d90e21810fb12de6/invoke.js"></script>
+    <div class="w-100 mt-14">
+        @yield('content') <!-- Dynamic Content -->
+    </div>
 
-<!-- Page-Specific Scripts -->
-@stack('scripts')
-<!-- Section for Blade Script -->
-@yield('scripts')
+    <a href="https://obstinacysexist.com/ztvrvi7yh2?key=dd87d9235cc3028350eecce2ada7546f" target="_blank"
+        rel="noopener noreferrer">Click here</a>
+    {{-- Direct Link for  bloghub.live --}}
+    @unless (Route::is('login') || Route::is('register'))
+        @include('partials.footer') <!-- Include Footer -->
+    @endunless
+    <script>
+        < script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" >
+    </script>
+    <script src="{{ asset('js/custom.js') }}"></script>
+
+    // <!-- Page-Specific Scripts -->
+    @stack('scripts')
+    // <!-- Section for Blade Script -->
+    @yield('scripts')
+    // Native Banner for bloghub.live
+    <script async="async" data-cfasync="false" src="//obstinacysexist.com/79b0d25bdb943d972ff9d5ecb9d7cecb/invoke.js">
+    </script>
+    // Social Bar for bloghub.live
+    <script type='text/javascript' src='//obstinacysexist.com/21/23/2d/21232d1e82c7a6cc84b20a3b295c8591.js'></script>
 </body>
 
 </html>
