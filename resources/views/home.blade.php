@@ -100,7 +100,7 @@
                                     class="text-primary text-sm font-semibold mb-2">{{ strtoupper($mainFeaturedPost->category) }}</span>
                                 <h3 class="text-2xl md:text-3xl font-bold mb-4">{{ $mainFeaturedPost->title }}</h3>
                                 <p class="text-gray-600 mb-6">
-                                    {{ $mainFeaturedPost->main_content ?: \Illuminate\Support\Str::limit(strip_tags($mainFeaturedPost->main_content), 100) }}
+                                    {{ \Illuminate\Support\Str::limit(strip_tags($mainFeaturedPost->main_content), 100) }}
                                 </p>
                                 <div class="flex items-center mb-6">
                                     <img loading="lazy"
@@ -110,7 +110,7 @@
                                     <div>
                                         <p class="font-medium">{{ $mainFeaturedPost->author->name }}</p>
                                         <p class="text-gray-500 text-sm">
-                                            {{ $mainFeaturedPost->published_at->format('M d, Y') }} ·
+                                            {{-- {{ $mainFeaturedPost->published_at->format('M d, Y') }} · --}}
                                             {{ $mainFeaturedPost->reading_time ?? '8' }} min read</p>
                                     </div>
                                 </div>
@@ -142,7 +142,7 @@
                                     <a href="{{ route('blog.show', $post->id) }}">{{ $post->title }}</a>
                                 </h3>
                                 <p class="text-gray-600 mb-4">
-                                    {{ $post->main_content ?: \Illuminate\Support\Str::limit(strip_tags($post->main_content), 100) }}
+                                    {{ \Illuminate\Support\Str::limit(strip_tags($post->main_content), 100) }}
                                 </p>
 
                                 <div class="flex items-center text-sm text-gray-500">
