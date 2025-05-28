@@ -18,7 +18,7 @@
                 class="w-full h-48 object-cover"
             />
             <div class="p-6">
-                <span class="text-streamline-600 text-sm font-medium">Productivity</span>
+                <span class="text-Bloghub-600 text-sm font-medium">Productivity</span>
                 <h3 class="text-xl font-bold mt-2 mb-3">10 Ways to Boost Your Team's Productivity</h3>
                 <p class="text-gray-600 mb-4">
                     Discover practical strategies to enhance collaboration and efficiency within your team.
@@ -42,7 +42,7 @@
                 class="w-full h-48 object-cover"
             />
             <div class="p-6">
-                <span class="text-streamline-600 text-sm font-medium">Remote Work</span>
+                <span class="text-Bloghub-600 text-sm font-medium">Remote Work</span>
                 <h3 class="text-xl font-bold mt-2 mb-3">The Future of Remote Work: Trends to Watch</h3>
                 <p class="text-gray-600 mb-4">
                     How remote work is evolving and what your organization needs to know to stay ahead.
@@ -66,7 +66,7 @@
                 class="w-full h-48 object-cover"
             />
             <div class="p-6">
-                <span class="text-streamline-600 text-sm font-medium">Project Management</span>
+                <span class="text-Bloghub-600 text-sm font-medium">Project Management</span>
                 <h3 class="text-xl font-bold mt-2 mb-3">Agile vs. Waterfall: Choosing the Right Methodology</h3>
                 <p class="text-gray-600 mb-4">
                     A comprehensive comparison to help you select the best approach for your projects.
@@ -90,7 +90,7 @@
                 class="w-full h-48 object-cover"
             />
             <div class="p-6">
-                <span class="text-streamline-600 text-sm font-medium">Analytics</span>
+                <span class="text-Bloghub-600 text-sm font-medium">Analytics</span>
                 <h3 class="text-xl font-bold mt-2 mb-3">How to Use Data to Improve Team Performance</h3>
                 <p class="text-gray-600 mb-4">
                     Leverage analytics to identify bottlenecks and optimize your team's workflow.
@@ -114,7 +114,7 @@
                 class="w-full h-48 object-cover"
             />
             <div class="p-6">
-                <span class="text-streamline-600 text-sm font-medium">Integrations</span>
+                <span class="text-Bloghub-600 text-sm font-medium">Integrations</span>
                 <h3 class="text-xl font-bold mt-2 mb-3">5 Essential Tool Integrations for Every Team</h3>
                 <p class="text-gray-600 mb-4">
                     Connect your favorite tools to create a seamless workflow and boost productivity.
@@ -138,7 +138,7 @@
                 class="w-full h-48 object-cover"
             />
             <div class="p-6">
-                <span class="text-streamline-600 text-sm font-medium">Company Culture</span>
+                <span class="text-Bloghub-600 text-sm font-medium">Company Culture</span>
                 <h3 class="text-xl font-bold mt-2 mb-3">Building a Culture of Collaboration</h3>
                 <p class="text-gray-600 mb-4">
                     How to foster a workplace environment that encourages teamwork and innovation.
@@ -157,7 +157,7 @@
     </div>
 
     <div class="flex justify-center">
-        <button class="bg-streamline-600 text-white px-6 py-3 rounded-md hover:bg-streamline-700 transition-colors">
+        <button class="bg-Bloghub-600 text-white px-6 py-3 rounded-md hover:bg-Bloghub-700 transition-colors">
             Load More Articles
         </button>
     </div>

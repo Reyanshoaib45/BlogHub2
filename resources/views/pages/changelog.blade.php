@@ -11,8 +11,8 @@
     </div>
 
     <div class="space-y-12">
-        <div class="border-l-4 border-streamline-500 pl-6 relative">
-            <div class="absolute -left-3 top-0 h-6 w-6 rounded-full bg-streamline-500 flex items-center justify-center">
+        <div class="border-l-4 border-Bloghub-500 pl-6 relative">
+            <div class="absolute -left-3 top-0 h-6 w-6 rounded-full bg-Bloghub-500 flex items-center justify-center">
                 <div class="h-2 w-2 rounded-full bg-white"></div>
             </div>
             <div class="mb-2">
@@ -32,8 +32,8 @@
             </div>
         </div>
 
-        <div class="border-l-4 border-streamline-500 pl-6 relative">
-            <div class="absolute -left-3 top-0 h-6 w-6 rounded-full bg-streamline-500 flex items-center justify-center">
+        <div class="border-l-4 border-Bloghub-500 pl-6 relative">
+            <div class="absolute -left-3 top-0 h-6 w-6 rounded-full bg-Bloghub-500 flex items-center justify-center">
                 <div class="h-2 w-2 rounded-full bg-white"></div>
             </div>
             <div class="mb-2">
@@ -52,8 +52,8 @@
             </div>
         </div>
 
-        <div class="border-l-4 border-streamline-500 pl-6 relative">
-            <div class="absolute -left-3 top-0 h-6 w-6 rounded-full bg-streamline-500 flex items-center justify-center">
+        <div class="border-l-4 border-Bloghub-500 pl-6 relative">
+            <div class="absolute -left-3 top-0 h-6 w-6 rounded-full bg-Bloghub-500 flex items-center justify-center">
                 <div class="h-2 w-2 rounded-full bg-white"></div>
             </div>
             <div class="mb-2">
@@ -72,8 +72,8 @@
             </div>
         </div>
 
-        <div class="border-l-4 border-streamline-500 pl-6 relative">
-            <div class="absolute -left-3 top-0 h-6 w-6 rounded-full bg-streamline-500 flex items-center justify-center">
+        <div class="border-l-4 border-Bloghub-500 pl-6 relative">
+            <div class="absolute -left-3 top-0 h-6 w-6 rounded-full bg-Bloghub-500 flex items-center justify-center">
                 <div class="h-2 w-2 rounded-full bg-white"></div>
             </div>
             <div class="mb-2">
@@ -92,8 +92,8 @@
             </div>
         </div>
 
-        <div class="border-l-4 border-streamline-500 pl-6 relative">
-            <div class="absolute -left-3 top-0 h-6 w-6 rounded-full bg-streamline-500 flex items-center justify-center">
+        <div class="border-l-4 border-Bloghub-500 pl-6 relative">
+            <div class="absolute -left-3 top-0 h-6 w-6 rounded-full bg-Bloghub-500 flex items-center justify-center">
                 <div class="h-2 w-2 rounded-full bg-white"></div>
             </div>
             <div class="mb-2">

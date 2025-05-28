@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div class="bg-streamline-50 py-12">
+    <div class="bg-Bloghub-50 py-12">
         <div class="container mx-auto px-4 md:px-6">
             <!-- Blog Header -->
             <div class="text-center mb-12 animate-fade-in">
@@ -19,7 +19,7 @@
                 </div>
                 @auth
                     <a href="{{ route('blog.create') }}"
-                        class="bg-streamline-600 hover:bg-streamline-700 text-white font-medium py-2 px-4 rounded-md transition-colors text-sm inline-flex items-center">
+                        class="bg-Bloghub-600 hover:bg-Bloghub-700 text-white font-medium py-2 px-4 rounded-md transition-colors text-sm inline-flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
@@ -63,7 +63,7 @@
                                     class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 </div>
                                 <span
-                                    class="absolute top-4 left-4 bg-streamline-600 text-white text-xs font-medium px-2.5 py-1 rounded-full">
+                                    class="absolute top-4 left-4 bg-Bloghub-600 text-white text-xs font-medium px-2.5 py-1 rounded-full">
                                     {{ $post->category }}
                                 </span>
                             </div>
@@ -71,7 +71,7 @@
                             <!-- Content -->
                             <div class="p-6">
                                 <h3
-                                    class="text-xl font-semibold text-gray-900 mb-3 group-hover:text-streamline-600 transition-colors">
+                                    class="text-xl font-semibold text-gray-900 mb-3 group-hover:text-Bloghub-600 transition-colors">
                                     {{ $post->title }}
                                 </h3>
                                 <p class="text-gray-600 mb-4">
@@ -108,7 +108,7 @@
                                             alt="{{ $post->author->name }}" class="w-8 h-8 rounded-full mr-3 object-cover">
                                     @else
                                         <div
-                                            class="w-8 h-8 rounded-full bg-streamline-100 text-streamline-600 flex items-center justify-center mr-3">
+                                            class="w-8 h-8 rounded-full bg-Bloghub-100 text-Bloghub-600 flex items-center justify-center mr-3">
                                             {{ substr($post->author->name, 0, 1) }}
                                         </div>
                                     @endif
@@ -122,7 +122,7 @@
                         <p class="text-gray-500 text-lg">No blog posts found.</p>
                         @auth
                             <a href="{{ route('blog.create') }}"
-                                class="mt-4 inline-block bg-streamline-600 hover:bg-streamline-700 text-white font-medium py-2 px-4 rounded-md transition-colors text-sm">
+                                class="mt-4 inline-block bg-Bloghub-600 hover:bg-Bloghub-700 text-white font-medium py-2 px-4 rounded-md transition-colors text-sm">
                                 Write the first post
                             </a>
                         @endauth

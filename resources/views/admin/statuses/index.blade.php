@@ -4,7 +4,7 @@
         <div class="text-center mb-16">
             <h1 class="text-4xl md:text-5xl font-bold mb-4">System Status</h1>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                Check the current operational status of all StreamLine services
+                Check the current operational status of all Bloghub services
             </p>
         </div>
 
@@ -111,10 +111,10 @@
                     type="email"
                     name="email"
                     placeholder="Your email address"
-                    class="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-streamline-500 focus:border-transparent"
+                    class="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-Bloghub-500 focus:border-transparent"
                     required
                 />
-                <button type="submit" class="bg-streamline-600 text-white px-6 py-2 rounded-md hover:bg-streamline-700 transition-colors whitespace-nowrap">
+                <button type="submit" class="bg-Bloghub-600 text-white px-6 py-2 rounded-md hover:bg-Bloghub-700 transition-colors whitespace-nowrap">
                     Subscribe
                 </button>
             </form>

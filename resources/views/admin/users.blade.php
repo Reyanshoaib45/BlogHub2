@@ -44,7 +44,7 @@
                                 <div class="ml-4">
                                     <div class="text-sm font-medium text-gray-900">{{ $user->name }}</div>
                                     @if ($user->is_admin)
-                                        <div class="text-xs text-streamline-600 font-semibold">Admin</div>
+                                        <div class="text-xs text-Bloghub-600 font-semibold">Admin</div>
                                     @endif
                                 </div>
                             </div>

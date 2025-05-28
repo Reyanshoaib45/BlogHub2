@@ -5,7 +5,7 @@ import { ArrowLeft, ArrowRight, Star } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    content: "StreamLine has transformed how our team collaborates. The intuitive interface and powerful features have boosted our productivity by at least 40%.",
+    content: "Bloghub has transformed how our team collaborates. The intuitive interface and powerful features have boosted our productivity by at least 40%.",
     author: "Sarah Johnson",
     role: "Product Manager",
     company: "Acme Corp",
@@ -13,7 +13,7 @@ const testimonials = [
   },
   {
     id: 2,
-    content: "I've tried many productivity tools, but StreamLine stands out with its AI capabilities. It's like having an extra team member who handles all the tedious tasks.",
+    content: "I've tried many productivity tools, but Bloghub stands out with its AI capabilities. It's like having an extra team member who handles all the tedious tasks.",
     author: "David Chen",
     role: "CTO",
     company: "TechNova",
@@ -39,16 +39,16 @@ const TestimonialsSection = () => {
     const interval = setInterval(() => {
       nextTestimonial();
     }, 5000);
-    
+
     return () => clearInterval(interval);
   }, [activeIndex]);
 
   const nextTestimonial = () => {
     if (animating) return;
-    
+
     setSlideDirection('slide-left');
     setAnimating(true);
-    
+
     setTimeout(() => {
       setActiveIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
       setAnimating(false);
@@ -57,10 +57,10 @@ const TestimonialsSection = () => {
 
   const prevTestimonial = () => {
     if (animating) return;
-    
+
     setSlideDirection('slide-right');
     setAnimating(true);
-    
+
     setTimeout(() => {
       setActiveIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
       setAnimating(false);
@@ -68,7 +68,7 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section id="testimonials" className="section-padding bg-streamline-50">
+    <section id="testimonials" className="section-padding bg-Bloghub-50">
       <div className="container mx-auto px-4 md:px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
@@ -76,17 +76,17 @@ const TestimonialsSection = () => {
             Trusted by Thousands of Teams
           </h2>
           <p className="text-xl text-gray-600 text-balance">
-            Don't just take our word for it — hear what our customers have to say about StreamLine.
+            Don't just take our word for it — hear what our customers have to say about Bloghub.
           </p>
         </div>
-        
+
         {/* Testimonials Carousel */}
         <div className="max-w-4xl mx-auto relative">
           {/* Testimonial Card */}
-          <div 
+          <div
             className={`bg-white rounded-2xl shadow-soft border border-gray-100 p-8 md:p-10 transition-all duration-300 ${
-              slideDirection === 'slide-left' ? 'animate-slide-left' : 
-              slideDirection === 'slide-right' ? 'animate-slide-right' : 
+              slideDirection === 'slide-left' ? 'animate-slide-left' :
+              slideDirection === 'slide-right' ? 'animate-slide-right' :
               'animate-scale-in'
             }`}
           >
@@ -95,15 +95,15 @@ const TestimonialsSection = () => {
                 <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />
               ))}
             </div>
-            
+
             <blockquote className="text-xl md:text-2xl text-gray-700 font-medium mb-8 text-balance">
               "{testimonials[activeIndex].content}"
             </blockquote>
-            
+
             <div className="flex items-center">
-              <img 
-                src={testimonials[activeIndex].avatar} 
-                alt={testimonials[activeIndex].author} 
+              <img
+                src={testimonials[activeIndex].avatar}
+                alt={testimonials[activeIndex].author}
                 className="h-12 w-12 rounded-full object-cover mr-4 animate-fade-in"
                 loading="lazy"
               />
@@ -113,17 +113,17 @@ const TestimonialsSection = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Navigation Controls */}
           <div className="flex justify-center items-center mt-8 space-x-4">
-            <button 
+            <button
               onClick={prevTestimonial}
-              className="p-2 rounded-full bg-white border border-gray-200 text-gray-700 hover:bg-streamline-50 hover:text-streamline-600 transition-colors transform hover:scale-110 duration-200"
+              className="p-2 rounded-full bg-white border border-gray-200 text-gray-700 hover:bg-Bloghub-50 hover:text-Bloghub-600 transition-colors transform hover:scale-110 duration-200"
               aria-label="Previous testimonial"
             >
               <ArrowLeft className="h-5 w-5" />
             </button>
-            
+
             {/* Dots */}
             <div className="flex space-x-2">
               {testimonials.map((_, index) => (
@@ -138,18 +138,18 @@ const TestimonialsSection = () => {
                     setActiveIndex(index);
                   }}
                   className={`h-2.5 rounded-full transition-all ${
-                    index === activeIndex 
-                      ? 'w-8 bg-streamline-600 animate-pulse' 
+                    index === activeIndex
+                      ? 'w-8 bg-Bloghub-600 animate-pulse'
                       : 'w-2.5 bg-gray-300 hover:bg-gray-400'
                   }`}
                   aria-label={`Go to testimonial ${index + 1}`}
                 ></button>
               ))}
             </div>
-            
-            <button 
+
+            <button
               onClick={nextTestimonial}
-              className="p-2 rounded-full bg-white border border-gray-200 text-gray-700 hover:bg-streamline-50 hover:text-streamline-600 transition-colors transform hover:scale-110 duration-200"
+              className="p-2 rounded-full bg-white border border-gray-200 text-gray-700 hover:bg-Bloghub-50 hover:text-Bloghub-600 transition-colors transform hover:scale-110 duration-200"
               aria-label="Next testimonial"
             >
               <ArrowRight className="h-5 w-5" />

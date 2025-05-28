@@ -14,9 +14,9 @@
         <div class="lg:col-span-1 bg-white p-6 rounded-lg shadow-sm border border-gray-100">
             <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
             <ul class="space-y-3">
-                <li><a href="#getting-started" class="text-streamline-600 hover:underline">Getting Started</a></li>
-                <li><a href="#user-guide" class="text-streamline-600 hover:underline">User Guide</a></li>
-                <li><a href="#faq" class="text-streamline-600 hover:underline">FAQs</a></li>
+                <li><a href="#getting-started" class="text-Bloghub-600 hover:underline">Getting Started</a></li>
+                <li><a href="#user-guide" class="text-Bloghub-600 hover:underline">User Guide</a></li>
+                <li><a href="#faq" class="text-Bloghub-600 hover:underline">FAQs</a></li>
             </ul>
 
             <h3 class="text-lg font-semibold mt-8 mb-4">Popular Topics</h3>
@@ -35,7 +35,7 @@
 
                 <div class="mb-6 border-b border-gray-200">
                     <nav class="flex -mb-px">
-                        <button class="py-2 px-4 border-b-2 border-streamline-500 text-streamline-600 font-medium">
+                        <button class="py-2 px-4 border-b-2 border-Bloghub-500 text-Bloghub-600 font-medium">
                             Initial Setup
                         </button>
                     </nav>
@@ -89,7 +89,7 @@
                 </div>
 
                 <div class="mt-6">
-                    <a href="#" class="text-streamline-600 hover:underline flex items-center">
+                    <a href="#" class="text-Bloghub-600 hover:underline flex items-center">
                         <span>View full user guide</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                     </a>
@@ -135,7 +135,7 @@ Accept: application/json</pre>
                 </div>
 
                 <div class="mt-6">
-                    <a href="#" class="text-streamline-600 hover:underline flex items-center">
+                    <a href="#" class="text-Bloghub-600 hover:underline flex items-center">
                         <span>Read Again documentation</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                     </a>

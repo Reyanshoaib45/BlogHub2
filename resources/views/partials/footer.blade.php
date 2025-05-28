@@ -76,15 +76,15 @@
                 </h3>
                 <ul class="space-y-3">
                     <li><a href="{{ route('features') }}"
-                           class="text-gray-600 hover:text-streamline-600 transition-colors">Features</a></li>
+                           class="text-gray-600 hover:text-Bloghub-600 transition-colors">Features</a></li>
                     <li><a href="{{ route('writing.tips') }}"
-                           class="text-gray-600 hover:text-streamline-600 transition-colors">Writing Tips</a></li>
+                           class="text-gray-600 hover:text-Bloghub-600 transition-colors">Writing Tips</a></li>
                     <li><a href="{{ route('changelog') }}"
-                           class="text-gray-600 hover:text-streamline-600 transition-colors">Changelog</a></li>
+                           class="text-gray-600 hover:text-Bloghub-600 transition-colors">Changelog</a></li>
                     {{-- <li><a href="{{ route('writing.tips') }}"
-                            class="text-gray-600 hover:text-streamline-600 transition-colors">Changelog</a></li> --}}
+                            class="text-gray-600 hover:text-Bloghub-600 transition-colors">Changelog</a></li> --}}
                     <li><a href="{{ route('documentation') }}"
-                           class="text-gray-600 hover:text-streamline-600 transition-colors">Documentation</a></li>
+                           class="text-gray-600 hover:text-Bloghub-600 transition-colors">Documentation</a></li>
                 </ul>
             </div>
 
@@ -96,15 +96,15 @@
                 </h3>
                 <ul class="space-y-3">
                     {{-- <li><a href="{{ route('help-center') }}"
-                            class="text-gray-600 hover:text-streamline-600 transition-colors">Help Center</a></li> --}}
+                            class="text-gray-600 hover:text-Bloghub-600 transition-colors">Help Center</a></li> --}}
                     <li><a href="{{ route('contact') }}"
-                           class="text-gray-600 hover:text-streamline-600 transition-colors">Contact Us</a></li>
+                           class="text-gray-600 hover:text-Bloghub-600 transition-colors">Contact Us</a></li>
                     <li><a href="{{ route('privacy') }}"
-                           class="text-gray-600 hover:text-streamline-600 transition-colors">Privacy Policy</a></li>
+                           class="text-gray-600 hover:text-Bloghub-600 transition-colors">Privacy Policy</a></li>
                     <li><a href="{{ route('terms') }}"
-                           class="text-gray-600 hover:text-streamline-600 transition-colors">Terms of Service</a></li>
+                           class="text-gray-600 hover:text-Bloghub-600 transition-colors">Terms of Service</a></li>
                     {{-- <li><a href="{{ route('status') }}"
-                            class="text-gray-600 hover:text-streamline-600 transition-colors">Status</a></li> --}}
+                            class="text-gray-600 hover:text-Bloghub-600 transition-colors">Status</a></li> --}}
                 </ul>
             </div>
 
@@ -115,13 +115,13 @@
                 </h3>
                 <ul class="space-y-3">
                     <li><a href="{{ route('about') }}"
-                           class="text-gray-600 hover:text-streamline-600 transition-colors">About Us</a></li>
+                           class="text-gray-600 hover:text-Bloghub-600 transition-colors">About Us</a></li>
                     <li><a href="{{ route('blog.index') }}"
-                           class="text-gray-600 hover:text-streamline-600 transition-colors">Blog</a></li>
+                           class="text-gray-600 hover:text-Bloghub-600 transition-colors">Blog</a></li>
                     <li><a href="{{ route('careers') }}"
-                           class="text-gray-600 hover:text-streamline-600 transition-colors">Careers</a></li>
+                           class="text-gray-600 hover:text-Bloghub-600 transition-colors">Careers</a></li>
                     <li><a href="{{ route('customers') }}"
-                           class="text-gray-600 hover:text-streamline-600 transition-colors">Customers</a></li>
+                           class="text-gray-600 hover:text-Bloghub-600 transition-colors">Customers</a></li>
                 </ul>
             </div>
 
@@ -133,19 +133,19 @@
                 <ul class="space-y-3">
                     <li>
                         <a href="{{ route('privacy') }}"
-                           class="text-sm text-gray-500 hover:text-streamline-600 transition-colors">Privacy
+                           class="text-sm text-gray-500 hover:text-Bloghub-600 transition-colors">Privacy
                             Policy</a>
 
                     </li>
                     <li>
                         <a href="{{ route('terms') }}"
-                           class="text-sm text-gray-500 hover:text-streamline-600 transition-colors">Terms of
+                           class="text-sm text-gray-500 hover:text-Bloghub-600 transition-colors">Terms of
                             Service</a>
 
                     </li>
                     <li>
                         <a href="{{ route('features') }}"
-                           class="text-sm text-gray-500 hover:text-streamline-600 transition-colors">Cookie Policy</a>
+                           class="text-sm text-gray-500 hover:text-Bloghub-600 transition-colors">Cookie Policy</a>
 
                     </li>
                 </ul>

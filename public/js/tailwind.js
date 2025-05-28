@@ -9,7 +9,7 @@ tailwind.config = {
                 light: '#F6F6F7',
                 accent: '#D6BCFA',
                 muted: '#8E9196',
-                streamline: {
+                Bloghub: {
                     50: "#f0f9ff",
                     100: "#e0f2fe",
                     200: "#bae6fd",

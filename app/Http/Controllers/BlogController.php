@@ -32,7 +32,7 @@ class BlogController extends Controller
 
         $seo = Seo::setTitle('Blog')
             ->setDescription('Read the latest insights, tips, and strategies about productivity and team collaboration.')
-            ->setKeywords('blog, productivity tips, team collaboration, project management, streamline')
+            ->setKeywords('blog, productivity tips, team collaboration, project management, Bloghub')
             ->render();
 
         return view('blog.index', compact('posts', 'seo'));
@@ -62,7 +62,7 @@ class BlogController extends Controller
             'main_content' => 'nullable|string',
             'content' => 'nullable|string',
             'final_content' => 'nullable|string',
-            
+
             // Subheadings validation
             'subheading_1' => 'nullable|string|max:255',
             'subcontent_1' => 'nullable|string',
@@ -78,45 +78,45 @@ class BlogController extends Controller
             'subcontent_6' => 'nullable|string',
             'subheading_7' => 'nullable|string|max:255',
             'subcontent_7' => 'nullable|string',
-            
+
             // Images
             'featured_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'featured_image_md' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-            
+
             // Categorization
             'category' => 'required|string|max:50',
             'tags' => 'nullable|string',
-            
+
             // Publishing
             'is_published' => 'boolean',
         ]);
-    
+
         // Handle image uploads
         if ($request->hasFile('featured_image')) {
             $imagePath = $request->file('featured_image')->store('featured_images', 'public');
             $validated['featured_image'] = $imagePath;
         }
-        
+
         if ($request->hasFile('featured_image_md')) {
             $imageMdPath = $request->file('featured_image_md')->store('featured_images_md', 'public');
             $validated['featured_image_md'] = $imageMdPath;
         }
-    
+
         // Convert tags string to array
-        $validated['tags'] = isset($validated['tags']) ? 
+        $validated['tags'] = isset($validated['tags']) ?
             array_map('trim', explode(',', $validated['tags'])) : [];
-    
+
         // Generate slug and set author
         $validated['slug'] = Str::slug($validated['title']) . '-' . Str::random(5);
         $validated['author_id'] = Auth::id();
-    
+
         // Set published_at if publishing
         if ($validated['is_published'] ?? false) {
             $validated['published_at'] = now();
         }
-    
+
         Post::create($validated);
-    
+
         return redirect()->route('blog.index')->with('success', 'Post created successfully!');
     }
 
@@ -204,7 +204,7 @@ class BlogController extends Controller
         'main_content' => 'nullable|string',
         // 'content' => 'required|string',
         'final_content' => 'nullable|string',
-        
+
         // Subheadings validation
         'subheading_1' => 'nullable|string|max:255',
         'subcontent_1' => 'nullable|string',
@@ -220,15 +220,15 @@ class BlogController extends Controller
         'subcontent_6' => 'nullable|string',
         'subheading_7' => 'nullable|string|max:255',
         'subcontent_7' => 'nullable|string',
-        
+
         // Images
         'featured_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         'featured_image_md' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-        
+
         // Categorization
         'category' => 'required|string|max:50',
         'tags' => 'nullable|string',
-        
+
         // Publishing
         'is_published' => 'boolean',
     ]);
@@ -239,23 +239,23 @@ class BlogController extends Controller
         if ($post->featured_image) {
             Storage::disk('public')->delete($post->featured_image);
         }
-        
+
         $imagePath = $request->file('featured_image')->store('featured_images', 'public');
         $validated['featured_image'] = $imagePath;
     }
-    
+
     if ($request->hasFile('featured_image_md')) {
         // Delete old image if exists
         if ($post->featured_image_md) {
             Storage::disk('public')->delete($post->featured_image_md);
         }
-        
+
         $imageMdPath = $request->file('featured_image_md')->store('featured_images_md', 'public');
         $validated['featured_image_md'] = $imageMdPath;
     }
 
     // Convert tags string to array
-    $validated['tags'] = isset($validated['tags']) ? 
+    $validated['tags'] = isset($validated['tags']) ?
         array_map('trim', explode(',', $validated['tags'])) : $post->tags;
 
     // Set published_at if publishing for the first time

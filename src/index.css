@@ -40,7 +40,7 @@
   }
 
   * {
-    @apply border-border selection:bg-streamline-100 selection:text-streamline-800;
+    @apply border-border selection:bg-Bloghub-100 selection:text-Bloghub-800;
   }
 
   body {
@@ -57,29 +57,29 @@
   .glass-card {
     @apply backdrop-blur-lg bg-white/90 border border-white/30 shadow-soft;
   }
-  
+
   .section-padding {
     @apply py-16 md:py-24;
   }
-  
+
   .link-underline {
-    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-left after:scale-x-0 after:bg-streamline-500 after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100;
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-left after:scale-x-0 after:bg-Bloghub-500 after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100;
   }
-  
+
   .feature-card {
-    @apply bg-white rounded-2xl p-6 shadow-subtle border border-gray-100 transition-all duration-300 hover:shadow-highlight hover:border-streamline-200;
+    @apply bg-white rounded-2xl p-6 shadow-subtle border border-gray-100 transition-all duration-300 hover:shadow-highlight hover:border-Bloghub-200;
   }
-  
+
   .btn-primary {
-    @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-medium text-white bg-streamline-600 hover:bg-streamline-700 transition-colors duration-300 shadow-sm;
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-medium text-white bg-Bloghub-600 hover:bg-Bloghub-700 transition-colors duration-300 shadow-sm;
   }
-  
+
   .btn-secondary {
-    @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-medium text-streamline-800 bg-streamline-100 hover:bg-streamline-200 transition-colors duration-300;
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-medium text-Bloghub-800 bg-Bloghub-100 hover:bg-Bloghub-200 transition-colors duration-300;
   }
-  
+
   .btn-outline {
-    @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-medium text-streamline-700 border border-streamline-300 hover:bg-streamline-50 transition-colors duration-300;
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-medium text-Bloghub-700 border border-Bloghub-300 hover:bg-Bloghub-50 transition-colors duration-300;
   }
 }
 

@@ -14,9 +14,9 @@
                         name="query"
                         id="search-input"
                         placeholder="Search for help articles..."
-                        class="w-full px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-streamline-500 focus:border-transparent"
+                        class="w-full px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-Bloghub-500 focus:border-transparent"
                     />
-                    <button type="submit" class="absolute right-3 top-1/2 -translate-y-1/2 bg-streamline-600 text-white p-1.5 rounded-full">
+                    <button type="submit" class="absolute right-3 top-1/2 -translate-y-1/2 bg-Bloghub-600 text-white p-1.5 rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
                         </svg>
@@ -35,7 +35,7 @@
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <div class="h-12 w-12 bg-streamline-100 text-streamline-600 rounded-md flex items-center justify-center mb-4">
+                    <div class="h-12 w-12 bg-Bloghub-100 text-Bloghub-600 rounded-md flex items-center justify-center mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
                             <polyline points="14 2 14 8 20 8"/>
@@ -47,19 +47,19 @@
                     </p>
                     <ul class="space-y-2">
                         <li>
-                            <a href="#" class="text-streamline-600 hover:underline">Creating your first workspace</a>
+                            <a href="#" class="text-Bloghub-600 hover:underline">Creating your first workspace</a>
                         </li>
                         <li>
-                            <a href="#" class="text-streamline-600 hover:underline">Inviting team members</a>
+                            <a href="#" class="text-Bloghub-600 hover:underline">Inviting team members</a>
                         </li>
                         <li>
-                            <a href="#" class="text-streamline-600 hover:underline">Setting up your first project</a>
+                            <a href="#" class="text-Bloghub-600 hover:underline">Setting up your first project</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <div class="h-12 w-12 bg-streamline-100 text-streamline-600 rounded-md flex items-center justify-center mb-4">
+                    <div class="h-12 w-12 bg-Bloghub-100 text-Bloghub-600 rounded-md flex items-center justify-center mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
                             <path d="M12 17h.01"/>
@@ -71,19 +71,19 @@
                     </p>
                     <ul class="space-y-2">
                         <li>
-                            <a href="#" class="text-streamline-600 hover:underline">Billing and subscription questions</a>
+                            <a href="#" class="text-Bloghub-600 hover:underline">Billing and subscription questions</a>
                         </li>
                         <li>
-                            <a href="#" class="text-streamline-600 hover:underline">Account settings and security</a>
+                            <a href="#" class="text-Bloghub-600 hover:underline">Account settings and security</a>
                         </li>
                         <li>
-                            <a href="#" class="text-streamline-600 hover:underline">Integrations and API access</a>
+                            <a href="#" class="text-Bloghub-600 hover:underline">Integrations and API access</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <div class="h-12 w-12 bg-streamline-100 text-streamline-600 rounded-md flex items-center justify-center mb-4">
+                    <div class="h-12 w-12 bg-Bloghub-100 text-Bloghub-600 rounded-md flex items-center justify-center mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
                         </svg>
@@ -94,13 +94,13 @@
                     </p>
                     <ul class="space-y-2">
                         <li>
-                            <a href="#" class="text-streamline-600 hover:underline">Creating custom workflows</a>
+                            <a href="#" class="text-Bloghub-600 hover:underline">Creating custom workflows</a>
                         </li>
                         <li>
-                            <a href="#" class="text-streamline-600 hover:underline">Using advanced reporting features</a>
+                            <a href="#" class="text-Bloghub-600 hover:underline">Using advanced reporting features</a>
                         </li>
                         <li>
-                            <a href="#" class="text-streamline-600 hover:underline">Automating repetitive tasks</a>
+                            <a href="#" class="text-Bloghub-600 hover:underline">Automating repetitive tasks</a>
                         </li>
                     </ul>
                 </div>
@@ -112,7 +112,7 @@
 
             <div class="grid md:grid-cols-2 gap-8">
                 <div>
-                    <div class="h-12 w-12 bg-streamline-100 text-streamline-600 rounded-md flex items-center justify-center mb-4">
+                    <div class="h-12 w-12 bg-Bloghub-100 text-Bloghub-600 rounded-md flex items-center justify-center mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
                         </svg>
@@ -125,7 +125,7 @@
                 </div>
 
                 <div>
-                    <div class="h-12 w-12 bg-streamline-100 text-streamline-600 rounded-md flex items-center justify-center mb-4">
+                    <div class="h-12 w-12 bg-Bloghub-100 text-Bloghub-600 rounded-md flex items-center justify-center mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
                         </svg>
@@ -183,7 +183,7 @@
                     filteredResults.forEach(result => {
                         const li = document.createElement('li');
                         li.className = 'py-2';
-                        li.innerHTML = `<a href="${result.url}" class="text-streamline-600 hover:underline">${result.title}</a>`;
+                        li.innerHTML = `<a href="${result.url}" class="text-Bloghub-600 hover:underline">${result.title}</a>`;
                         resultsList.appendChild(li);
                     });
                 }

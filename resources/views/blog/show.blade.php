@@ -8,7 +8,7 @@
             <!-- Back Button -->
             <div class="mb-8">
                 <a href="{{ route('blog.index') }}"
-                    class="text-streamline-600 hover:text-streamline-700 inline-flex items-center transition-colors">
+                    class="text-Bloghub-600 hover:text-Bloghub-700 inline-flex items-center transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -31,7 +31,7 @@
             <header class="mb-10 animate-fade-in">
                 <!-- Category Badge -->
                 <div class="mb-4">
-                    <span class="bg-streamline-100 text-streamline-600 text-sm font-medium px-3 py-1 rounded-full">
+                    <span class="bg-Bloghub-100 text-Bloghub-600 text-sm font-medium px-3 py-1 rounded-full">
                         {{ $post->category }}
                     </span>
                 </div>
@@ -50,7 +50,7 @@
                                 alt="{{ $post->author->name }}" class="w-10 h-10 rounded-full mr-3 object-cover">
                         @else
                             <div
-                                class="w-10 h-10 rounded-full bg-streamline-100 text-streamline-600 flex items-center justify-center mr-3">
+                                class="w-10 h-10 rounded-full bg-Bloghub-100 text-Bloghub-600 flex items-center justify-center mr-3">
                                 {{ substr($post->author->name, 0, 1) }}
                             </div>
                         @endif
@@ -290,7 +290,7 @@
                                     alt="{{ $post->author->name }}" class="w-20 h-20 rounded-full object-cover">
                             @else
                                 <div
-                                    class="w-20 h-20 rounded-full bg-streamline-100 text-streamline-600 flex items-center justify-center text-2xl font-semibold">
+                                    class="w-20 h-20 rounded-full bg-Bloghub-100 text-Bloghub-600 flex items-center justify-center text-2xl font-semibold">
                                     {{ substr($post->author->name, 0, 1) }}
                                 </div>
                             @endif
@@ -376,11 +376,11 @@
                                         <label for="content" class="block text-sm font-medium text-gray-700 mb-2">Leave
                                             a comment</label>
                                         <textarea id="content" name="content" rows="4"
-                                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-streamline-500 focus:border-transparent"
+                                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-Bloghub-500 focus:border-transparent"
                                             required></textarea>
                                     </div>
                                     <button type="submit"
-                                        class="bg-streamline-600 hover:bg-streamline-700 text-white font-medium py-2 px-4 rounded-md transition-colors text-sm">
+                                        class="bg-Bloghub-600 hover:bg-Bloghub-700 text-white font-medium py-2 px-4 rounded-md transition-colors text-sm">
                                         Post Comment
                                     </button>
                                 </form>
@@ -388,7 +388,7 @@
                         @else
                             <div class="bg-gray-50 p-4 rounded-md mb-8">
                                 <p class="text-gray-700">Please <a href="{{ route('login') }}"
-                                        class="text-streamline-600 hover:underline">log
+                                        class="text-Bloghub-600 hover:underline">log
                                         in</a> to leave a comment.</p>
                             </div>
                         @endauth
@@ -406,7 +406,7 @@
                                                 class="w-10 h-10 rounded-full object-cover">
                                         @else
                                             <div
-                                                class="w-10 h-10 rounded-full bg-streamline-100 text-streamline-600 flex items-center justify-center">
+                                                class="w-10 h-10 rounded-full bg-Bloghub-100 text-Bloghub-600 flex items-center justify-center">
                                                 {{ substr($comment->user->name, 0, 1) }}
                                             </div>
                                         @endif
@@ -447,7 +447,7 @@
                             @if ($post->author_id === Auth::id())
                                 <div class="flex gap-2 mb-6">
                                     <a href="{{ route('blog.edit', $post->id) }}"
-                                        class="bg-streamline-600 hover:bg-streamline-700 text-white px-3 py-1 rounded text-sm flex-1 text-center">
+                                        class="bg-Bloghub-600 hover:bg-Bloghub-700 text-white px-3 py-1 rounded text-sm flex-1 text-center">
                                         Edit
                                     </a>
                                     <form action="{{ route('blog.destroy', $post->id) }}" method="POST" class="flex-1"
@@ -478,7 +478,7 @@
                                                         class="w-full h-full object-cover" />
                                                 @else
                                                     <div
-                                                        class="w-full h-full bg-streamline-100 flex items-center justify-center text-streamline-600">
+                                                        class="w-full h-full bg-Bloghub-100 flex items-center justify-center text-Bloghub-600">
                                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8"
                                                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -490,7 +490,7 @@
                                             </div>
                                             <div>
                                                 <h4
-                                                    class="font-medium text-gray-900 hover:text-streamline-600 transition-colors line-clamp-2">
+                                                    class="font-medium text-gray-900 hover:text-Bloghub-600 transition-colors line-clamp-2">
                                                     {{ $relatedPost->title }}
                                                 </h4>
                                                 <p class="text-sm text-gray-500 mt-1">

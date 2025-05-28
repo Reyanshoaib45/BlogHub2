@@ -8,10 +8,10 @@
             <div class="flex flex-wrap items-center justify-between mb-6">
                 <h1 class="text-2xl font-bold text-gray-900">Dashboard</h1>
                 <div>
-                    <a href="{{ route('password.change') }}" class="text-sm text-streamline-600 hover:text-streamline-800 mr-4">
+                    <a href="{{ route('password.change') }}" class="text-sm text-Bloghub-600 hover:text-Bloghub-800 mr-4">
                         Change Password
                     </a>
-                    <a href="{{ route('blog.create') }}" class="bg-streamline-600 hover:bg-streamline-700 text-white text-sm font-medium py-2 px-4 rounded-md transition-colors inline-flex items-center">
+                    <a href="{{ route('blog.create') }}" class="bg-Bloghub-600 hover:bg-Bloghub-700 text-white text-sm font-medium py-2 px-4 rounded-md transition-colors inline-flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
                         </svg>
@@ -26,9 +26,9 @@
                 </div>
             @endif
 
-            <div class="bg-streamline-50 border border-streamline-200 rounded-lg p-6 mb-6">
-                <h2 class="text-lg font-semibold text-streamline-800 mb-2">Welcome, {{ $user->name }}!</h2>
-                <p class="text-streamline-600">You've successfully logged into your StreamLine account.</p>
+            <div class="bg-Bloghub-50 border border-Bloghub-200 rounded-lg p-6 mb-6">
+                <h2 class="text-lg font-semibold text-Bloghub-800 mb-2">Welcome, {{ $user->name }}!</h2>
+                <p class="text-Bloghub-600">You've successfully logged into your Bloghub account.</p>
             </div>
 
             <!-- Blog Statistics -->
@@ -37,7 +37,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
                     <div class="bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow">
                         <h3 class="font-medium text-gray-800 mb-2">Total Posts</h3>
-                        <p class="text-3xl font-bold text-streamline-600">{{ $totalPosts }}</p>
+                        <p class="text-3xl font-bold text-Bloghub-600">{{ $totalPosts }}</p>
                     </div>
 
                     <div class="bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow">
@@ -61,7 +61,7 @@
             <div class="mb-8">
                 <div class="flex items-center justify-between mb-4">
                     <h2 class="text-xl font-semibold text-gray-800">Your Recent Posts</h2>
-                    <a href="{{ route('blog.index') }}" class="text-sm text-streamline-600 hover:text-streamline-800">
+                    <a href="{{ route('blog.index') }}" class="text-sm text-Bloghub-600 hover:text-Bloghub-800">
                         View All Posts
                     </a>
                 </div>
@@ -102,7 +102,7 @@
                                             {{ $post->views }}
                                         </td>
                                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                                            <a href="{{ route('blog.show', $post->slug) }}" class="text-streamline-600 hover:text-streamline-900 mr-3">
+                                            <a href="{{ route('blog.show', $post->slug) }}" class="text-Bloghub-600 hover:text-Bloghub-900 mr-3">
                                                 View
                                             </a>
                                             <a href="{{ route('blog.edit', $post->id) }}" class="text-amber-600 hover:text-amber-900 mr-3">
@@ -124,7 +124,7 @@
                 @else
                     <div class="bg-gray-50 rounded-lg p-8 text-center">
                         <p class="text-gray-600">You haven't created any posts yet.</p>
-                        <a href="{{ route('blog.create') }}" class="mt-4 inline-block bg-streamline-600 hover:bg-streamline-700 text-white font-medium py-2 px-4 rounded-md transition-colors">
+                        <a href="{{ route('blog.create') }}" class="mt-4 inline-block bg-Bloghub-600 hover:bg-Bloghub-700 text-white font-medium py-2 px-4 rounded-md transition-colors">
                             Create Your First Post
                         </a>
                     </div>

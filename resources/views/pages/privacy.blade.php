@@ -2,16 +2,16 @@
 @section('content')
     <div class="container mx-auto px-4 py-10 max-w-5xl">
         <div class="animate-fade-in">
-            <h1 class="text-3xl md:text-4xl font-bold mb-8 text-streamline-800">Privacy Policy</h1>
+            <h1 class="text-3xl md:text-4xl font-bold mb-8 text-Bloghub-800">Privacy Policy</h1>
 
             <div class="bg-white shadow-sm rounded-lg p-6 mb-8">
-                <h2 class="text-xl font-semibold mb-4 text-streamline-700">1. Introduction</h2>
+                <h2 class="text-xl font-semibold mb-4 text-Bloghub-700">1. Introduction</h2>
                 <p class="mb-4 text-gray-700">
                     BlogHub is committed to protecting your privacy. This Privacy Policy explains how we collect,
                     use, disclose, and safeguard your information when you visit our website or use our services.
                 </p>
 
-                <h2 class="text-xl font-semibold mb-4 text-streamline-700">2. Information We Collect</h2>
+                <h2 class="text-xl font-semibold mb-4 text-Bloghub-700">2. Information We Collect</h2>
                 <p class="mb-4 text-gray-700">
                     <strong>Personal Information</strong>: We may collect personal information that you voluntarily
                     provide to us when you register on our platform, including your name, email address, and profile picture.
@@ -22,7 +22,7 @@
                     and pages visited.
                 </p>
 
-                <h2 class="text-xl font-semibold mb-4 text-streamline-700">3. How We Use Your Information</h2>
+                <h2 class="text-xl font-semibold mb-4 text-Bloghub-700">3. How We Use Your Information</h2>
                 <p class="mb-4 text-gray-700">
                     We use the information we collect for various purposes, including to:
                 </p>
@@ -35,7 +35,7 @@
                     <li>Find and prevent fraud</li>
                 </ul>
 
-                <h2 class="text-xl font-semibold mb-4 text-streamline-700">4. Disclosure of Your Information</h2>
+                <h2 class="text-xl font-semibold mb-4 text-Bloghub-700">4. Disclosure of Your Information</h2>
                 <p class="mb-4 text-gray-700">
                     We may share your information in the following situations:
                 </p>
@@ -50,19 +50,19 @@
                         or to protect our rights.</li>
                 </ul>
 
-                <h2 class="text-xl font-semibold mb-4 text-streamline-700">5. Security of Your Information</h2>
+                <h2 class="text-xl font-semibold mb-4 text-Bloghub-700">5. Security of Your Information</h2>
                 <p class="mb-4 text-gray-700">
                     We use administrative, technical, and physical security measures to protect your personal information.
                     However, no data transmission over the Internet or storage system can be guaranteed to be 100% secure.
                 </p>
 
-                <h2 class="text-xl font-semibold mb-4 text-streamline-700">6. Cookies and Web Beacons</h2>
+                <h2 class="text-xl font-semibold mb-4 text-Bloghub-700">6. Cookies and Web Beacons</h2>
                 <p class="mb-4 text-gray-700">
                     We use cookies and similar tracking technologies to track activity on our platform and store certain
                     information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.
                 </p>
 
-                <h2 class="text-xl font-semibold mb-4 text-streamline-700">7. Your Rights</h2>
+                <h2 class="text-xl font-semibold mb-4 text-Bloghub-700">7. Your Rights</h2>
                 <p class="mb-4 text-gray-700">
                     Depending on your location, you may have certain rights regarding your personal information, such as:
                 </p>
@@ -74,13 +74,13 @@
                     <li>The right to data portability</li>
                 </ul>
 
-                <h2 class="text-xl font-semibold mb-4 text-streamline-700">8. Changes to This Privacy Policy</h2>
+                <h2 class="text-xl font-semibold mb-4 text-Bloghub-700">8. Changes to This Privacy Policy</h2>
                 <p class="mb-4 text-gray-700">
                     We may update our Privacy Policy from time to time. We will notify you of any changes by posting
                     the new Privacy Policy on this page and updating the "Last Updated" date.
                 </p>
 
-                <h2 class="text-xl font-semibold mb-4 text-streamline-700">9. Contact Us</h2>
+                <h2 class="text-xl font-semibold mb-4 text-Bloghub-700">9. Contact Us</h2>
                 <p class="mb-4 text-gray-700">
                     If you have any questions about this Privacy Policy, please contact us at privacy@BlogHub.com.
                 </p>

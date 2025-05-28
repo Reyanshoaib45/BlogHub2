@@ -57,7 +57,7 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))"
         },
-        streamline: {
+        Bloghub: {
           50: "#f0f9ff",
           100: "#e0f2fe",
           200: "#bae6fd",

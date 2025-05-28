@@ -14,6 +14,7 @@
 
     <meta name="description" content="A modern blogging platform for creative minds" />
     <meta name="Reyan Shoaib" content="BlogHub" />
+    <meta name="google-adsense-account" content="ca-pub-6147807273036756">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <meta property="og:image" content="/og-image.png" />

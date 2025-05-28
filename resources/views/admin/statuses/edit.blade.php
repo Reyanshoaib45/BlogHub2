@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="flex items-center justify-end">
-                    <button type="submit" class="bg-streamline-600 hover:bg-streamline-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                    <button type="submit" class="bg-Bloghub-600 hover:bg-Bloghub-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                         Update Status
                     </button>
                 </div>
