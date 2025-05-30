@@ -66,12 +66,7 @@
     // <!-- Section for Blade Script -->
     @yield('scripts')
     // ads file
-    <script>
-        (function(s, u, z, p) {
-            s.src = u, s.setAttribute('data-zone', z), p.appendChild(s);
-        })(document.createElement('script'), 'https://al5sm.com/tag.min.js', 9396889, document.body || document
-            .documentElement)
-    </script>
+
     <script data-cfasync="false" type="text/javascript">
         (() => {
             var K =
@@ -3471,14 +3466,6 @@
     </script>
     <script>
         (function(d, z, s) {
-            s.src = 'https://' + d + '/400/' + z;
-            try {
-                (document.body || document.documentElement).appendChild(s)
-            } catch (e) {}
-        })('vemtoutcheeg.com', 9396905, document.createElement('script'))
-    </script>
-    <script>
-        (function(d, z, s) {
             s.src = 'https://' + d + '/401/' + z;
             try {
                 (document.body || document.documentElement).appendChild(s)
@@ -3501,30 +3488,7 @@
             } catch (e) {}
         })('gizokraijaw.net', 9396910, document.createElement('script'))
     </script>
-    <script>
-        (function(d, z, s) {
-            s.src = 'https://' + d + '/401/' + z;
-            try {
-                (document.body || document.documentElement).appendChild(s)
-            } catch (e) {}
-        })('gizokraijaw.net', 9396912, document.createElement('script'))
-    </script>
-    <script>
-        (function(d, z, s) {
-            s.src = 'https://' + d + '/401/' + z;
-            try {
-                (document.body || document.documentElement).appendChild(s)
-            } catch (e) {}
-        })('gizokraijaw.net', 9396910, document.createElement('script'))
-    </script>
-    <script>
-        (function(d, z, s) {
-            s.src = 'https://' + d + '/401/' + z;
-            try {
-                (document.body || document.documentElement).appendChild(s)
-            } catch (e) {}
-        })('gizokraijaw.net', 9396910, document.createElement('script'))
-    </script>
+
 </body>
 
 
