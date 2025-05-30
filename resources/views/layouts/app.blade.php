@@ -11,10 +11,9 @@
         <title>{{ config('seo.default_title') }}</title>
         <meta name="description" content="{{ config('seo.default_description') }}">
     @endif
-
+    <meta name="monetag" content="6cf24c0b573aa3dee76b0e7aea22f524">
     <meta name="description" content="A modern blogging platform for creative minds" />
     <meta name="Reyan Shoaib" content="BlogHub" />
-    <meta name="google-adsense-account" content="ca-pub-6147807273036756">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <meta property="og:image" content="/og-image.png" />
@@ -34,32 +33,12 @@
     <script src="{{ asset('js/custom.js') }}"></script>
     <!-- Load Tailwind Configuration -->
     <script src="{{ asset('js/tailwind.js') }}"></script>
-    {{-- Popunder for  bloghub.live --}}
-    <script type='text/javascript' src='//obstinacysexist.com/c8/aa/4d/c8aa4de7e8742925fc57e1dfafd71899.js'></script>
-
 </head>
 
 <body class="bg-gray-50 font-sans text-gray-800">
     @unless (Route::is('login') || Route::is('register'))
         @include('partials.navbar') <!-- Include Navbar -->
     @endunless
-    {{-- Native Banner for  bloghub.live --}}
-    <div id="container-79b0d25bdb943d972ff9d5ecb9d7cecb"></div>
-
-    {{-- Banner 468x60 for  bloghub.live --}}
-    <script type="text/javascript">
-        atOptions = {
-            'key': 'd9c1297e29c1ffb2d90e21810fb12de6',
-            'format': 'iframe',
-            'height': 60,
-            'width': 468,
-            'params': {}
-        };
-    </script>
-    <script type="text/javascript" src="//obstinacysexist.com/d9c1297e29c1ffb2d90e21810fb12de6/invoke.js"></script>
-    <div class="w-100 mt-14">
-        @yield('content') <!-- Dynamic Content -->
-    </div>
 
     <a href="https://obstinacysexist.com/ztvrvi7yh2?key=dd87d9235cc3028350eecce2ada7546f" target="_blank"
         rel="noopener noreferrer"
@@ -80,11 +59,7 @@
     @stack('scripts')
     // <!-- Section for Blade Script -->
     @yield('scripts')
-    // Native Banner for bloghub.live
-    <script async="async" data-cfasync="false" src="//obstinacysexist.com/79b0d25bdb943d972ff9d5ecb9d7cecb/invoke.js">
-    </script>
-    // Social Bar for bloghub.live
-    <script type='text/javascript' src='//obstinacysexist.com/21/23/2d/21232d1e82c7a6cc84b20a3b295c8591.js'></script>
+
 </body>
 
 </html>
