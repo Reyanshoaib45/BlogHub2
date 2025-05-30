@@ -41,6 +41,10 @@
     @unless (Route::is('login') || Route::is('register'))
         @include('partials.navbar') <!-- Include Navbar -->
     @endunless
+    <div class="container mt-16">
+        @yield('content') <!-- Dynamic Content -->
+
+    </div>
 
     <a href="https://otieu.com/4/9396916" target="_blank" rel="noopener noreferrer"
         class="ml-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded justify-center "
