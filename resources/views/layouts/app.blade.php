@@ -14,6 +14,7 @@
     <meta name="description" content="A modern blogging platform for creative minds" />
     <meta name="Reyan Shoaib" content="BlogHub" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
 
     <meta property="og:image" content="/og-image.png" />
     <meta name="ezoic-site-verification" content="1oDCsF0qjWx9Tun4eeQaTJgMQAVSBX" />

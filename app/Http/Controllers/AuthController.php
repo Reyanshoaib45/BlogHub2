@@ -92,11 +92,16 @@ class AuthController extends Controller
 
         // Handle profile picture upload
         if ($request->hasFile('profile_picture')) {
-            $image = $request->file('profile_picture');
-            $imageName = time() . '.' . $image->getClientOriginalExtension();
-            $image->storeAs('public/profile_pictures', $imageName);
-            $userData['profile_picture'] = 'profile_pictures/' . $imageName;
-        }
+    $image = $request->file('profile_picture');
+    $imageName = time() . '.' . $image->getClientOriginalExtension();
+    
+    // Store the file
+    $path = $image->storeAs('profile_pictures', $imageName, 'public');
+    
+    // Save relative path to database or array
+    $userData['profile_picture'] = $path;
+}
+
 
         $user = User::create($userData);
 

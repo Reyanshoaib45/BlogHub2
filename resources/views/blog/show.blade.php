@@ -1,5 +1,10 @@
 @extends('layouts.app')
 @section('content')
+    <style>
+        p {
+            font-size: 18px;
+        }
+    </style>
     @php
         use Illuminate\Support\Str;
     @endphp
