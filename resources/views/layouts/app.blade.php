@@ -11,7 +11,7 @@
         <title>{{ config('seo.default_title') }}</title>
         <meta name="description" content="{{ config('seo.default_description') }}">
     @endif
-    <meta name="monetag" content="6cf24c0b573aa3dee76b0e7aea22f524">
+    {{-- <meta name="monetag" content="6cf24c0b573aa3dee76b0e7aea22f524"> --}}
     <meta name="description" content="A modern blogging platform for creative minds" />
     <meta name="Reyan Shoaib" content="BlogHub" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -35,7 +35,7 @@
     <!-- Load Tailwind Configuration -->
     <script src="{{ asset('js/tailwind.js') }}"></script>
     <!-- Load adsfile Configuration -->
-    <script src="{{ asset('js/sw.js') }}"></script>
+    {{-- <script src="{{ asset('js/sw.js') }}"></script> --}}
 </head>
 
 <body class="bg-gray-50 font-sans text-gray-800">
@@ -60,6 +60,7 @@
         < script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" >
     </script>
     <script src="{{ asset('js/custom.js') }}"></script>
+    //
     //
     <script src="https://fpyf8.com/88/tag.min.js" data-zone="149944" async data-cfasync="false"></script>
 
