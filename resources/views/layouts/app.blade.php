@@ -47,11 +47,11 @@
 
     </div>
 
-    <a href="https://otieu.com/4/9396916" target="_blank" rel="noopener noreferrer"
+    {{-- <a href="https://otieu.com/4/9396916" target="_blank" rel="noopener noreferrer"
         class="ml-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded justify-center "
         style="display: flex">
         Explore Blog
-    </a>
+    </a> --}}
     {{-- Direct Link for  bloghub.live --}}
     @unless (Route::is('login') || Route::is('register'))
         @include('partials.footer') <!-- Include Footer -->
@@ -60,16 +60,13 @@
         < script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" >
     </script>
     <script src="{{ asset('js/custom.js') }}"></script>
+    //
     <script src="https://fpyf8.com/88/tag.min.js" data-zone="149944" async data-cfasync="false"></script>
 
     // <!-- Page-Specific Scripts -->
     @stack('scripts')
     // <!-- Section for Blade Script -->
     @yield('scripts')
-    // ads file
-
-
 </body>
-
 
 </html>
