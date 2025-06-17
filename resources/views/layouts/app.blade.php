@@ -15,6 +15,8 @@
     <meta name="Reyan Shoaib" content="BlogHub" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+    <script src="//go.ezoic.net/ezoic.js?bloghub.live" type="text/javascript"></script>
+
 
     <meta property="og:image" content="/og-image.png" />
     <meta name="ezoic-site-verification" content="1oDCsF0qjWx9Tun4eeQaTJgMQAVSBX" />
