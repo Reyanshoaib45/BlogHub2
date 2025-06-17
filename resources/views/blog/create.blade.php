@@ -66,6 +66,8 @@
                             </option>
                             <option value="health" {{ old('category') == 'health' ? 'selected' : '' }}>Health
                             </option>
+                            <option value="fainance" {{ old('category') == 'fainance' ? 'selected' : '' }}>Fainance
+                            </option>
                             <option value="Productivity" {{ old('category') == 'Productivity' ? 'selected' : '' }}>
                                 Productivity</option>
                             <option value="Design" {{ old('category') == 'Design' ? 'selected' : '' }}>Design</option>
